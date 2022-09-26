@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Mendix Academy Autocomplete",
+  "version": "1.0",
+  "description": "Automatically complete Mendix Academy Paths",
+  "icons": {
+    "48": "icons/autocomplete-48.png",
+    "96": "icons/autocomplete-96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.mendix.com/*"],
+      "js": ["autocomplete.js"]
+    }
+  ]
+}
